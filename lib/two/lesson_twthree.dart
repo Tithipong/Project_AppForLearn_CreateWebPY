@@ -26,8 +26,7 @@ class _LessonTWthreeState extends State<LessonTWthree> {
           fontWeight: FontWeight.bold,
         ),
         //fontStyle: FontStyle.italic),
-        );
-        
+        ); 
   }
    Widget showAppName2() {
     return Text('ไวรัสโควิด19',
@@ -47,19 +46,16 @@ class _LessonTWthreeState extends State<LessonTWthree> {
         SizedBox(
           height: 30.0,
         ),
-        
       ],
     );
   }
   VideoPlayerController videoPlayerController;
-
   ChewieController _chewieController;
 
   @override
   void initState() {
     super.initState();
     videoPlayerController = VideoPlayerController.asset('videoPR/2covid.mp4');
-
     _chewieController = ChewieController(
       videoPlayerController: videoPlayerController,
       aspectRatio: 16 / 9,

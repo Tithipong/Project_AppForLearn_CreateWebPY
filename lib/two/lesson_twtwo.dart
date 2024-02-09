@@ -175,8 +175,6 @@ Widget showtxt4() {
               //fontStyle: FontStyle.italic),
             ]),),);
   }
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

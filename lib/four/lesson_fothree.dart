@@ -1,7 +1,6 @@
 import 'package:chewie/chewie.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import 'package:video_player/video_player.dart';
 
 void main() {
@@ -18,17 +17,18 @@ class LessonFOthree extends StatefulWidget {
 }
 
 class _LessonFOthreeState extends State<LessonFOthree> {
-Widget showAppName1() {
-    return Text('เเสดงตัวอย่างการรวมเว็บเพจ',
-        style: TextStyle(
-          fontSize: 20.5,
-          color: Colors.purple[600],
-          fontWeight: FontWeight.bold,
-        ),
-        //fontStyle: FontStyle.italic),
-        );
-        
+  Widget showAppName1() {
+    return Text(
+      'เเสดงตัวอย่างการรวมเว็บเพจ',
+      style: TextStyle(
+        fontSize: 20.5,
+        color: Colors.purple[600],
+        fontWeight: FontWeight.bold,
+      ),
+      //fontStyle: FontStyle.italic),
+    );
   }
+
   Widget showtxt() {
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -81,7 +81,11 @@ Widget showAppName1() {
         ),
       ),
       body: Column(
-        children: <Widget>[SizedBox(height: 30.0,),showtxt(),
+        children: <Widget>[
+          SizedBox(
+            height: 30.0,
+          ),
+          showtxt(),
           Expanded(
             child: Center(
               child: Chewie(
